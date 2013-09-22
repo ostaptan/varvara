@@ -1,6 +1,8 @@
 # Varvara
 
-TODO: Write a gem description
+### Gem is still developing. It's not ready for usage.
+
+Displays your routes, classes, modules and thier methods & variables. Provides full stack of hierarcy, dependencies, associations and configurations of your project.
 
 ## Installation
 
@@ -18,7 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Create file initializers/varvara.rb and paste the code:
+
+	require 'varvara'
+
+	Varvara.launch
+	
+After running your server a html file report.rb will be generated. Open it to view some information.	
 
 ## Contributing
 
