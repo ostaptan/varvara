@@ -3,7 +3,7 @@ gemspec
 
 rails_version = ENV["RAILS_VERSION"] || "default"
 
-rails = case rails_version
+version = case rails_version
 when "master"
   {github: "rails/rails"}
 when "default"
@@ -12,4 +12,4 @@ else
   "~> #{rails_version}"
 end
 
-gem "rails", rails
+gem "rails", version
