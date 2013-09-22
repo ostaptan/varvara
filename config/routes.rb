@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  match_varvara
+  mount_varvara
 end
