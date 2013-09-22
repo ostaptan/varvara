@@ -1,6 +1,6 @@
 require "varvara/version"
 require 'varvara/engine'
-require 'rails'
+require 'rails/routes'
 
 module Varvara
   
