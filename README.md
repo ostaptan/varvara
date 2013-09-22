@@ -2,13 +2,15 @@
 
 ### Gem is still developing. It's not ready for usage.
 
-Displays your routes, classes, modules and thier methods & variables. Provides full stack of hierarcy, dependencies, associations and configurations of your project.
+Displays your routes, classes, modules and their methods & variables. Provides full stack of hierarchy, dependencies, associations and configurations of your project.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'varvara'
+	group :development do
+    	gem 'varvara'
+	end	
 
 And then execute:
 
@@ -20,13 +22,8 @@ Or install it yourself as:
 
 ## Usage
 
-Create file initializers/varvara.rb and paste the code:
-
-	require 'varvara'
-
-	Varvara.launch
-	
-After running your server a html file report.rb will be generated. Open it to view some information.	
+For current version visit /varvara/routes in your app and you'll see your routes. Coming soon:
+Visit /varvara and see full stack of hierarchy, dependencies, associations, routes, controllers, models and configurations of your project.	
 
 ## Contributing
 
