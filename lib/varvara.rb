@@ -1,9 +1,6 @@
 require "varvara/version"
 require 'varvara/engine'
-if RUBY_VERSION >= '2.0.0' 
-    require('rails') 
-else
-    require('rails/routes') 
+RUBY_VERSION >= '2.0.0' ? require('rails') : require('rails/routes') 
 
 module Varvara
   
