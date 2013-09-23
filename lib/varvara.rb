@@ -23,7 +23,7 @@ module Varvara
 
   def self.format_controllers(hash = all_controllers)
     # output -> array with controllers names
-    hash.map {|c| c[:controller]}.uniq.compact.map {|c_name| "#{c_name.capitalize}Controller" unless c_name.split('/').size >= 2}  
+    hash.map {|c| c[:controller]}.uniq.compact.map {|c_name| "#{c_name.capitalize}Controller" unless c_name.split('/').size >= 2}.compact  
   end 
 
   def format_controller_actions(hash = all_controllers)
