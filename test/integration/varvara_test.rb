@@ -14,11 +14,4 @@ class InheritNavigationTest < ActiveSupport::IntegrationCase
     assert has_content?('foo#index')
   end
 
-  test 'JS show/hide _path' do
-    visit('/varvara/routes')
-    assert has_content?('foo_index_path')
-    click_link('Url')
-    assert has_content?('foo_index_url')
-  end
-
 end
