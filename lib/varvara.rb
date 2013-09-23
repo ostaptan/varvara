@@ -1,6 +1,9 @@
 require "varvara/version"
 require 'varvara/engine'
-RUBY_VERSION >= '2.0.0' ? require('rails') : require('rails/routes')   
+if RUBY_VERSION >= '2.0.0' 
+    require('rails') 
+else
+    require('rails/routes') 
 
 module Varvara
   
@@ -20,5 +23,10 @@ module Varvara
     Rails.application.reload_routes!
     Rails.application.routes.routes
   end  
+
+  def self.all_controllers
+    Rails.application.eager_load!
+    ApplicationController.descendants
+  end
     
 end

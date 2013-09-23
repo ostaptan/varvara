@@ -5,7 +5,7 @@ module Varvara
     before_filter :require_local!
 
     def index
-#     @controllers = Varvara.format_controllers
+      @controllers = Varvara.all_controllers
     end
 
   end
