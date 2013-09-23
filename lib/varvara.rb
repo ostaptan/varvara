@@ -1,6 +1,10 @@
 require "varvara/version"
 require 'varvara/engine'
-require 'rails/routes'
+if RUBY_VERSION >= '2.0.0'
+  require 'rails'
+else
+  require 'rails/routes'   
+
 
 module Varvara
   
