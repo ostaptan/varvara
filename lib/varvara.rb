@@ -19,10 +19,21 @@ module Varvara
   def self.all_routes
     Rails.application.reload_routes!
     Rails.application.routes.routes
-  end  
+  end
+
+  def self.format_controllers(hash = all_controllers)
+    # output -> array with controllers names
+    hash.map {|c| c[:controller]}.uniq.compact.map {|c_name| "#{c_name.capitalize}Controller" unless c_name.split('/').size >= 2}  
+  end 
+
+  def format_controller_actions(hash = all_controllers)
+     
+  end 
 
   def self.all_controllers
-    ApplicationController.subclasses
+    Rails.application.routes.routes.map do |route|
+      {controller: route.defaults[:controller], action: route.defaults[:action]}
+    end
   end
     
 end
