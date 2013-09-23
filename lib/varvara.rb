@@ -22,8 +22,7 @@ module Varvara
   end  
 
   def self.all_controllers
-    Rails.application.eager_load!
-    ApplicationController.descendants
+    ApplicationController.subclasses
   end
     
 end
