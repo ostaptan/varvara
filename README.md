@@ -22,8 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-For current version visit *localhost:3000/varvara/routes* in your app and you'll see your routes. Coming soon:
-Visit *localhost:3000/varvara* and see full stack of hierarchy, dependencies, associations, routes, controllers, models and configurations of your project.	
+For current version visit `localhost:3000/varvara` in your app and see full stack of hierarchy, dependencies, associations, routes, controllers, models and configurations of your project.	
 
 ## Contributing
 
