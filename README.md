@@ -9,7 +9,7 @@ Displays your routes, classes, modules and their methods & variables. Provides f
 Add this line to your application's Gemfile:
 
 	group :development do
-    	gem 'varvara'
+    	gem 'varvara', git: 'git://github.com/ostaptan/varvara.git'
 	end	
 
 And then execute:
