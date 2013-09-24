@@ -16,7 +16,7 @@ module Varvara
     ROUTE_INSPECTOR.send :collect_routes, routes
   end  
   
-  def format_models(models = all_models)
+  def self.format_models(models = all_models)
     models
   end
 
