@@ -43,7 +43,9 @@ module Varvara
   end
   
   def self.all_models
-    ActiveRecord::Base.send(:subclasses)    
+    Dir["#{Rails.root}/app/models/**/*.rb"].map do |f|
+      f.chomp('.rb').camelize.split('::').last # works with namespaces e.g. Foo::Bar::MyClass
+    end   
   end
     
 end
