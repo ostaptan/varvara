@@ -1,0 +1,24 @@
+<h2>
+  Models
+</h2>
+
+<ul>
+	<% @models.each do |m| %>
+	  <li>
+      	<%= m %>
+      	<%= m.columns.map(&:name) %>
+	  </li>	
+      <ul>
+      	<% m.reflect_on_all_associations.each do |association| %>
+          <li>
+            <%= association.macro %>
+            <%= association.name %>
+		  </li>
+          <li> 
+            Foreign Key:
+            <%= association.foreign_key %>
+          </li>
+        <% end %> 
+      </ul>
+	<% end %>
+</ul>
