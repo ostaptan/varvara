@@ -1,5 +1,5 @@
 module Varvara
-  class Varvara::VarvaraController < Varvara::ApplicationController
+  class VarvaraController < Varvara::ApplicationController
     layout 'varvara/application'
     
     before_filter :require_local!
