@@ -13,3 +13,4 @@ else
 end
 
 gem "rails", version
+gem 'haml'
