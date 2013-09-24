@@ -17,7 +17,7 @@ module Varvara
   end  
   
   def self.format_models(models = all_models)
-    models
+    models.map {|mod| mod.split('::').last.constantize }
   end
 
   def self.format_controllers(hash = all_controllers)
@@ -44,7 +44,7 @@ module Varvara
   
   def self.all_models
     Dir["#{Rails.root}/app/models/**/*.rb"].map do |f|
-      f.chomp('.rb').camelize.split('::').last # works with namespaces e.g. Foo::Bar::MyClass
+      f.chomp('.rb').camelize # works with namespaces e.g. Foo::Bar::MyClass
     end   
   end
     
