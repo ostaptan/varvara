@@ -14,11 +14,10 @@ module Varvara
 
   def self.format_routes(routes = all_routes)
     ROUTE_INSPECTOR.send :collect_routes, routes
-  end
-
-  def self.all_routes
-    Rails.application.reload_routes!
-    Rails.application.routes.routes
+  end  
+  
+  def format_models(models = all_models)
+    models
   end
 
   def self.format_controllers(hash = all_controllers)
@@ -28,12 +27,23 @@ module Varvara
 
   def format_controller_actions(hash = all_controllers)
      
-  end 
+  end
+  
+  private 
+  
+  def self.all_routes
+    Rails.application.reload_routes!
+    Rails.application.routes.routes
+  end
 
   def self.all_controllers
     Rails.application.routes.routes.map do |route|
       {controller: route.defaults[:controller], action: route.defaults[:action]}
     end
+  end
+  
+  def self.all_models
+    ActiveRecord::Base.send(:subclasses)    
   end
     
 end
