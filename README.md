@@ -4,6 +4,7 @@ Displays your routes, controllers, models, their columns associations and their 
 
 ![Routes:](https://www.evernote.com/shard/s221/sh/641b071e-8178-4332-9bc3-5df1b413a0be/922e34563fed6e41db664350a93c054d/deep/0/Screenshot%2029.09.13%2018:14.jpg)
 ![Models:](https://www.evernote.com/shard/s221/sh/9ada483e-3db6-4315-a9be-9b65d4c9bc85/cb9768c4cbef6c228058ccd690553a01/deep/0/Screenshot%2029.09.13%2016:36.jpg)
+![Controllors:](https://www.evernote.com/shard/s221/sh/fb141c86-0c2e-42a7-8cc8-5b69245f70e6/2505fc0fc8d3a7e88e446620129ccd69/deep/0/Screenshot%2029.09.13%2018:16.jpg)
 
 ## Installation
 
