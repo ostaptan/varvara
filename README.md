@@ -10,7 +10,7 @@ Displays your routes, controllers, models, their columns associations and their 
 Add this line to your application's Gemfile:
 
 	group :development do
-    	gem 'varvara', git: 'git://github.com/ostaptan/varvara.git'
+    	gem 'varvara'
 	end	
 
 And then execute:
