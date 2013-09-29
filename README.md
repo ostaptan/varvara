@@ -1,8 +1,6 @@
 # Varvara
 
-### Gem is still developing. It's not ready for usage.
-
-Displays your routes, classes, modules and their methods & variables. Provides full stack of hierarchy, dependencies, associations and configurations of your project.
+Displays your routes, controllers, models, their columns associations and their methods & variables. Provides full stack of hierarchy, dependencies, associations of your project.
 
 ## Installation
 
@@ -31,3 +29,12 @@ For current version visit `localhost:3000/varvara` in your app and see full stac
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## What to do?
+
+1. Add some stylings and improve the view of pages (add some javascript for models as erd of akira matsuda https://github.com/amatsuda/erd )
+2. Add hierarchy of controllers.
+3. maybe: Live rails console as in gem 'better_errors'
+4. Add displaying some configurations.
+5. Add ui possibillity to generate models, controllers, scaffolds.
+6. have fun)

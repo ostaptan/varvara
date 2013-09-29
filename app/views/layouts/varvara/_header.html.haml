@@ -1,15 +1,6 @@
-%nav.navbar.navbar-default(role="navigation")
-  .navbar-header
-    %button(type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse")
-      %span.sr-only Toggle navigation
-      %span.icon-bar
-      %span.icon-bar
-      %span.icon-bar
-    %a.navbar-brand(href="#") Varvara
-
-  %div(class="collapse navbar-collapse navbar-ex1-collapse")
-    %ul{:class=>"nav navbar-nav"}
-      %li= link_to 'Home', '/varvara'
-      %li= link_to 'Controllers', '/varvara/controllers'
-      %li= link_to 'Models', '/varvara/models'
-      %li= link_to 'Routes', '/varvara/routes'
+.navbar
+  %ul.navbar-inner
+    %li= link_to 'Home', '/varvara'
+    %li= link_to 'Controllers', '/varvara/controllers'
+    %li= link_to 'Models', '/varvara/models'
+    %li= link_to 'Routes', '/varvara/routes'
