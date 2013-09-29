@@ -21,12 +21,16 @@ module Varvara
   end
 
   def self.format_controllers(hash = all_controllers)
-    # output -> array with controllers names
-    hash.map {|c| c[:controller]}.uniq.compact.map {|c_name| "#{c_name.capitalize}Controller" unless c_name.split('/').size >= 2}.compact  
+    # output -> array with controllers
+    hash.map do |c| 
+      c[:controller]
+    end.uniq.compact.map do |c_name| 
+      self.controller_from_name(c_name) 
+    end.compact  
   end 
-
-  def format_controller_actions(hash = all_controllers)
-     
+  
+  def self.controller_from_name(c_name)
+    "#{c_name.camelize}Controller".constantize
   end
   
   private 

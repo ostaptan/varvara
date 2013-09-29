@@ -5,5 +5,10 @@
 <ul>
 	<% @controllers.each do |c| %>
 	  <li><%= c %></li>
+		<ul>
+			<% c.action_methods.each do |method| %>
+				<li><%= method %></li>
+			<% end %>
+		</ul>	
 	<% end %>
 </ul>
