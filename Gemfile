@@ -14,3 +14,4 @@ end
 
 gem "rails", version
 gem 'haml'
+gem 'bootstrap-rails-engine'
