@@ -32,4 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_development_dependency "sqlite3"
   spec.add_development_dependency "haml"
+  spec.add_development_dependency "therubyracer"
+  spec.add_development_dependency "less-rails" 
+  spec.add_development_dependency "twitter-bootstrap-rails"
 end
