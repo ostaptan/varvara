@@ -1,4 +1,4 @@
-# Varvara
+# Varvara v1.0.2
 
 Displays your routes, controllers, models, their columns associations and their methods & variables. Provides full stack of hierarchy, dependencies, associations of your project.
 
