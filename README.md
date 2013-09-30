@@ -1,5 +1,7 @@
 # Varvara v1.0.2
 
+[![Code Climate](https://codeclimate.com/github/ostaptan/varvara.png)](https://codeclimate.com/github/ostaptan/varvara)
+
 Displays your routes, controllers, models, their columns associations and their methods & variables. Provides full stack of hierarchy, dependencies, associations of your project.
 
 ![Routes:](https://www.evernote.com/shard/s221/sh/641b071e-8178-4332-9bc3-5df1b413a0be/922e34563fed6e41db664350a93c054d/deep/0/Screenshot%2029.09.13%2018:14.jpg)
